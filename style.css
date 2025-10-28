@@ -1,0 +1,41 @@
+/* CareerSphere/style.css */
+
+/* Custom styling for a modern look */
+:root {
+    --primary-color: #008744; /* Custom primary green/blue */
+    --secondary-color: #00b140;
+}
+
+/* Streamlit main UI tweaks */
+.css-h5fm8x { /* Target the main header/title */
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* Primary Button Styling */
+.stButton>button {
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.stButton>button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Dashboard Cards - apply via st.markdown('<div class="dashboard-card">...</div>', unsafe_allow_html=True) */
+.dashboard-card {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(240, 242, 246, 0.8); /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* Dark Theme Adjustments (Streamlit handles the main background, but this ensures text is visible) */
+/* The key is Streamlit's theme.base which auto-applies dark/light mode */
+/* We keep the custom colors consistent */
